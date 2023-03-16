@@ -1,3 +1,5 @@
+import { ColorList } from "./ColorList";
+
 const people = [
     {
       name: 'Donna',
@@ -23,6 +25,9 @@ export const Greeting = () => (
                 <p>{x.name}'s favorite number is {x.favoriteNumber}</p>
                 <p>{x.name}'s favorite number plus 10 is {x.favoriteNumber + 10}</p>
                 <p>{x.name}'s favorite color is</p>
+                <ul className="Listing">
+                    <ColorList colors={x.favoriteColor} />
+                </ul>
             </div>
         ))}
     </>
