@@ -22,11 +22,7 @@ export const Greeting = () => (
                 <h3>Hello, {x.name}</h3>
                 <p>{x.name}'s favorite number is {x.favoriteNumber}</p>
                 <p>{x.name}'s favorite number plus 10 is {x.favoriteNumber + 10}</p>
-                <p>{x.name}'s favorite color is 
-                    <ul>
-                        {x.favoriteColor.map((y, i) => y.i === 0 ? <li>None</li> : <li>{y.i}</li>)}
-                    </ul>
-                </p>
+                <p>{x.name}'s favorite color is</p>
             </div>
         ))}
     </>
